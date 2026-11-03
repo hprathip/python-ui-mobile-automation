@@ -66,7 +66,7 @@ class TestDialogs:
         pytest.param("confirm", "Click for JS Confirm", "I am a JS Confirm", id="confirm_dialog"),
         pytest.param("prompt", "Click for JS Prompt", "I am a JS prompt", id="prompt_dialog")
     ])
-    def test_alert_shows_expected_message(self, open_internet, dialog_type, button_name, expected_dialog_message):
+    def test_dialog_shows_expected_message(self, open_internet, dialog_type, button_name, expected_dialog_message):
         page = open_internet("javascript_alerts")
         messages = []                              
         captured = []
