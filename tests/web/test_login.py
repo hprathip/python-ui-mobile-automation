@@ -24,4 +24,4 @@ def test_valid_users_reach_inventory(login_page, user, timeout_ms):
 @pytest.mark.smoke
 def test_locked_user_sees_error(login_page):
     login_page.login(LOCKED)
-    expect(login_page.error).to_contain_text("locked out")
+    expect(login_page.error).to_contain_text("locked outt")
